@@ -12,9 +12,15 @@ public class Main {
 	  heap.insert(40);
 	  heap.insert(52);
 	  heap.insert(67);
+
+	  System.out.println("********** Before Sorting ********** ");
+	  heap.printHeap();
+	  System.out.println("********** After Sorting ********** ");
+	  heap.heapSort();
 	  heap.printHeap();
 
-	  System.out.println(heap.peek());
+
+	  //System.out.println(heap.peek());
 
 //	  heap.delete(1);
 //	  heap.printHeap();
@@ -22,10 +28,10 @@ public class Main {
 //	  heap.delete(5);
 //	  heap.printHeap();
 
-	  heap.delete(0);
-	  heap.printHeap();
-
-	  System.out.println(heap.peek());
+//	  heap.delete(0);
+//	  heap.printHeap();
+//
+//	  System.out.println(heap.peek());
 
     }
 }

@@ -61,6 +61,19 @@ public class HeapArrays {
         return deletedValue;
     }
 
+    public void heapSort(){
+        int lastHeapIndex = size - 1;
+        for(int i = 0; i < size; i++){
+            int tmp = heap[0];
+            heap[0] = heap[lastHeapIndex - i];
+            heap[lastHeapIndex - i] = tmp;
+
+            fixHeapBelow(0, lastHeapIndex - i - 1);
+
+        }
+    }
+
+
     private void fixHeapBelow(int index, int lastHeapIndex){
         int childToSwap;
         while (index <= lastHeapIndex){
